@@ -15,8 +15,8 @@ This is a simple sign-up page created using HTML and CSS. The page features a re
   - Includes hover effects for buttons.
 
 - **User-Friendly Form**:
-  - Inputs for email, first name, last name, and password.
-  - "First Name" and "Last Name" are aligned horizontally for better usability.
+  - Inputs for email.
+  - Notify button for future updates
 
 ---
 
