@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 1- Watch</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+     body{
+        font-family: 'Cairo', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: fixed;
+        
+        width: 100%;
+        overflow-y:hidden;
+        align-items:center ;
+        background: url('data:image/svg+xml;utf8,<svg id="visual" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="960" height="540" fill="%23FFFFFF"></rect><g transform="translate(960, 540)"><path d="M-459 0C-430.9 -70.5 -402.8 -141.1 -368.1 -212.5C-333.3 -283.9 -291.9 -356.3 -229.5 -397.5C-167.1 -438.7 -83.5 -448.9 0 -459L0 0Z" fill="%234FC3F7"></path></g><g transform="translate(0, 0)"><path d="M459 0C447.5 81.1 435.9 162.2 397.5 229.5C359.1 296.8 293.7 350.3 223 386.2C152.3 422.2 76.1 440.6 0 459L0 0Z" fill="%234FC3F7"></path></g></svg>') no-repeat center center / cover;
+     
+     }
+
+
+h2 {
+    font-family: 'Inter', sans-serif; 
+
+}
+
+p {
+    font-family: 'Rubik', sans-serif; 
+}
+     .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+       
+        margin: 10px;
+     }
+     .content{
+        background-color: #d6d3d1;
+        max-width: 400px;
+        height :700px;
+         
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        margin: 10px;
+        gap: 10px;
+        text-align: center;
+        border-radius: 15px;
+
+     }
+
+     img{
+        border: 1px solid black;
+        
+     }
+     .price{
+        display: flex;
+        gap: 4px;
+        justify-content: flex-start;
+        align-self: start;
+     }
+     .price button{
+       padding: 10px;
+       font-size: 20px;
+       font-weight:700;
+     }
+
+     .price-off-btn{
+        background-color:#ef4444;
+        color: #FFF;
+      border: none;
+     padding: auto;
+     border-radius: 6px;
+     }
+    
+     .previous-price{
+    border: none;
+    background-color: transparent;
+    color: red;
+     }
+
+     .new-price{
+         border: none;
+         background-color: transparent;
+     }
+     
+.cart-btn{
+   width:80%;
+   margin-top: 15px;
+   padding: 20px 30px;
+   border: none;
+   border-radius: 10px;
+   font-weight: 700;
+   font-size: 20px;
+   background-color: #4FC3F7;
+   cursor: pointer;
+
+   color: #0a0a0a;
+   transition: background-color  0.5s ease,border 0.5s ease;
+
+}
+.cart-btn:hover{
+    background-color: transparent;
+
+
+    border: 2px solid #4FC3F7;;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+           <img src="./image/watch.png" width="400" height="400">
+            <h2>Fossil Dean Men's Dress Watch with Chronograph Display </h2>
+            <div class="price">
+                <button class="price-off-btn">50%</button>
+           <button class="previous-price"> <del>$100</del></button>
+                <button class="new-price">$50</button>
+            </div>
+           
+                <button  class="cart-btn">Add to Cart</button>
+         
+        </div>
+    </div>
+    
+</body>
+</html>
