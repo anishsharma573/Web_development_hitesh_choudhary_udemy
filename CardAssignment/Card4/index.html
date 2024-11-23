@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-4</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4, #fad0c4);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            border-radius: 17px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            width: 90%;
+            max-width: 600px;
+            background: #ccc;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .content img {
+            border-radius: 7px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.5);
+            background: linear-gradient(to right, #00c6fb, #005bea);
+        }
+
+        h2 {
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        p {
+            margin-top: -10px;
+            font-size: 20px;
+        }
+
+        .btns {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 300;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .buy-btn {
+            background: linear-gradient(to right, #00c6fb, #005bea);
+            color: white;
+        }
+
+        .buy-btn:hover {
+            background: linear-gradient(to right, #005bea, #00c6fb);
+            transform: scale(1.05);
+        }
+
+        .cart-btn {
+            background: #f4a261;
+            color: white;
+        }
+
+        .cart-btn:hover {
+            background: #e76f51;
+            transform: scale(1.05);
+        }
+
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="./images/nike.png" width="300" alt="Nike shoe">
+            <h2>Nike Shoe</h2>
+            <p>Available in all Colors</p>
+            <div class="btns">
+                <button class="btn buy-btn">Buy Now</button>
+                <button class="btn cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
