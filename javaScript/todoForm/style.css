@@ -1,0 +1,97 @@
+/* Body styles */
+body {
+    background-color: #0a0a0a;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #44403c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Input container styles */
+.input-container input {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-right: 12px;
+    color: #fff;
+    border: none;
+    width: 70%; /* Adjusted width for better alignment */
+    background-color: #0a0a0a;
+}
+
+.add-task-btn {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: none;
+    background-color: #9333ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-task-btn:hover {
+    background-color: #7c2ac6; /* Slightly darker on hover */
+}
+
+/* Todo list styles */
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Added spacing from input container */
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjusted width for better layout */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+/* Button inside the todo list */
+#todo-list button {
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    border: none;
+    background-color: #be123c;
+    color: #fff;
+    cursor: pointer;
+    width: auto; /* Adjusted width for consistency */
+}
+
+#todo-list button:hover {
+    background-color: #9b0f33; /* Slightly darker on hover */
+}
+
+/* Remove default list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
