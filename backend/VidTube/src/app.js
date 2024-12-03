@@ -26,10 +26,11 @@ app.use(cookieParser())
 import healthCheckRouter from "./routers/healthcheck.routes.js"
 import userRouter from "./routers/user.routes.js"
 import { errorHandler } from "./middlewares/error.middlewares.js"
-
+import { VideoRoute } from "./routers/video.routes.js"
 //routes
 app.use("/api/v1/healthcheck",healthCheckRouter)
 app.use("/api/v1/users",userRouter)
+app.use("/api/v1/video",VideoRoute)
 
 app.use(errorHandler)
 export {app}

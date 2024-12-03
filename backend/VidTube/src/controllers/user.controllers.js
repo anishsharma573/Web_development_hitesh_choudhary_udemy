@@ -503,10 +503,7 @@ export {
     updateAccountDetails,
     updateUserCoverImage,
     updateAvatar,
-    changeCurrentPassword,
-    updateAccountDetails,
-    updateAvatar,
-    updateUserCoverImage,
+  
     getUSerChannelProfile,
     getWatchedHistory
 }
