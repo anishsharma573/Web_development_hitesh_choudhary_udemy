@@ -27,10 +27,15 @@ import healthCheckRouter from "./routers/healthcheck.routes.js"
 import userRouter from "./routers/user.routes.js"
 import { errorHandler } from "./middlewares/error.middlewares.js"
 import { VideoRoute } from "./routers/video.routes.js"
+import { likesRoute } from "./routers/like.routes.js"
+import { CommentRoute } from "./routers/comment.routes.js"
+
 //routes
 app.use("/api/v1/healthcheck",healthCheckRouter)
 app.use("/api/v1/users",userRouter)
 app.use("/api/v1/video",VideoRoute)
+app.use("/api/v1/like",likesRoute)
+app.use("/api/v1/comment",CommentRoute)
 
 app.use(errorHandler)
 export {app}

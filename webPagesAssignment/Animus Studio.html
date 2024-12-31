@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5501/AnimusStudio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animus Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0d2b45, #203b55);
+            color: #ffffff;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffc107;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .button {
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 1.1rem;
+            border-radius: 15px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .floating-box {
+            display: none;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 20px;
+            border: 1px solid #444;
+            border-radius: 15px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            width: 300px;
+            text-align: left;
+            font-size: 1.2rem;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover + .floating-box {
+            display: block;
+            opacity: 1;
+            transform: translateX(-40%) translateY(-10px);
+        }
+
+        .button:nth-child(1) { background: linear-gradient(90deg, #007bff, #0056b3); }
+        .button:nth-child(2) { background: linear-gradient(90deg, #28a745, #19692c); }
+        .button:nth-child(3) { background: linear-gradient(90deg, #ff5722, #e64a19); }
+        .button:nth-child(4) { background: linear-gradient(90deg, #ffc107, #e6a700); }
+        .button:nth-child(5) { background: linear-gradient(90deg, #6f42c1, #4a2a88); }
+        .button:nth-child(6) { background: linear-gradient(90deg, #17a2b8, #0e6e8c); }
+        .button:nth-child(7) { background: linear-gradient(90deg, #20c997, #148f6f); }
+        .button:nth-child(8) { background: linear-gradient(90deg, #e83e8c, #b32b66); }
+        .button:nth-child(9) { background: linear-gradient(90deg, #fd7e14, #c66d12); }
+        .button:nth-child(10) { background: linear-gradient(90deg, #6610f2, #520dc2); }
+        .button:nth-child(11) { background: linear-gradient(90deg, #ff4757, #d63031); }
+        .button:nth-child(12) { background: linear-gradient(90deg, #1e90ff, #005cbf); }
+        .button:nth-child(13) { background: linear-gradient(90deg, #32cd32, #228b22); }
+        .button:nth-child(14) { background: linear-gradient(90deg, #daa520, #b8860b); }
+        .button:nth-child(15) { background: linear-gradient(90deg, #ff6347, #e63e00); }
+        .button:nth-child(16) { background: linear-gradient(90deg, #17c0eb, #0ea5d5); }
+        .button:nth-child(17) { background: linear-gradient(90deg, #ff4500, #ff6347); }
+        .button:nth-child(18) { background: linear-gradient(90deg, #00bfff, #1e90ff); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .team {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .team:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .team h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #ffc107;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1rem;
+            color: #b0c4de;
+        }
+
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+    <div class="container">
+        <div class="title">Animus Studio</div>
+
+        
+        <div class="section">
+            <div class="grid">
+                <button class="button">Game Director</button>
+                <div class="floating-box">Responsible for overall game vision and direction.</div>
+
+                <button class="button">Cinematic Director</button>
+                <div class="floating-box">Oversees cutscenes and storytelling elements.</div>
+
+                <button class="button">Art Director</button>
+                <div class="floating-box">Manages visual aspects and art style.</div>
+
+                <button class="button">Product Manager</button>
+                <div class="floating-box">Coordinates product delivery and goals.</div>
+
+                <button class="button">HR</button>
+                <div class="floating-box">Handles recruitment and team well-being.</div>
+            </div>
+        </div>
+
+     
+        <div class="section">
+            <div class="grid">
+                <div class="team">
+                    <h2>Design Team</h2>
+                    <button class="button">Narrative Designer</button>
+                    <div class="floating-box">Creates the story and dialogue.</div>
+
+                    <button class="button">System Designer</button>
+                    <div class="floating-box">Develops gameplay mechanics and systems.</div>
+
+                    <button class="button">Level Designer</button>
+                    <div class="floating-box">Designs game environments and challenges.</div>
+
+                    <button class="button">History Consultant</button>
+                    <div class="floating-box">Provides historical accuracy for themes.</div>
+
+                    <button class="button">Language Assistant</button>
+                    <div class="floating-box">Supports localization and language adaptation.</div>
+
+                    <button class="button">Wardrobe Supervisor</button>
+                    <div class="floating-box">Ensures costumes fit the art direction.</div>
+                </div>
+                <div class="team">
+                    <h2>Art Team</h2>
+                    <button class="button">2D Animators</button>
+                    <div class="floating-box">Creates hand-drawn animations.</div>
+
+                    <button class="button">UI Artist</button>
+                    <div class="floating-box">Designs user interface elements.</div>
+
+                    <button class="button">Illustrator</button>
+                    <div class="floating-box">Produces concept and promotional art.</div>
+
+                    <button class="button">Graphic Designer</button>
+                    <div class="floating-box">Handles graphic assets and branding.</div>
+
+                    <button class="button">Stunt Coordinator</button>
+                    <div class="floating-box">Plans and executes in-game stunts.</div>
+
+                    <button class="button">Actors</button>
+                    <div class="floating-box">Performs motion capture and voice acting.</div>
+
+                    <button class="button">Mocap Coordinator</button>
+                    <div class="floating-box">Manages motion capture sessions.</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="section">
+            <div class="grid">
+                <div class="team">
+                    <h2>Programmers Team</h2>
+                    <button class="button">System Programmer</button>
+                    <div class="floating-box">Codes core functionalities and systems.</div>
+
+                    <button class="button">AI Programmer</button>
+                    <div class="floating-box">Develops artificial intelligence for NPCs.</div>
+
+                    <button class="button">Tools Programmer</button>
+                    <div class="floating-box">Creates tools for game development workflows.</div>
+
+                    <button class="button">Mission Programmer</button>
+                    <div class="floating-box">Implements mission logic and events.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 style="color: #ffc107; margin-bottom: 20px;">Support Roles</h2>
+            <div class="grid">
+                <button class="button">QA Tester</button>
+                <div class="floating-box">Ensures the game is free of bugs and issues.</div>
+
+                <button class="button">Audio Lead</button>
+                <div class="floating-box">Oversees music and sound effects.</div>
+
+                <button class="button">SFX Engineer</button>
+                <div class="floating-box">Designs in-game sound effects.</div>
+
+                <button class="button">Music Composer</button>
+                <div class="floating-box">Creates the game's musical score.</div>
+
+                <button class="button">Unreal VFX Artist</button>
+                <div class="floating-box">Develops visual effects using Unreal Engine.</div>
+
+                <button class="button">Tech Artist</button>
+                <div class="floating-box">
+Bridges art and programming for performance.</div>
+            </div>
+        </div>
+
+        <div class="footer">© change it-anish Sharma</div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

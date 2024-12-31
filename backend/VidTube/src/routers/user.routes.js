@@ -15,6 +15,7 @@ import {
 } from "../controllers/user.controllers.js";
 import { upload } from "../middlewares/multer.middlewares.js";
 import { verifyJWT } from "../middlewares/auth.middlewares.js";
+import { getAllVideos } from "../controllers/video.controllers.js";
 
 const router = Router();
 
@@ -53,5 +54,6 @@ router
 router.route("/channel/:username").get(getUSerChannelProfile);
 
 router.route("/watched-history").get(getWatchedHistory);
+
 
 export default router;
